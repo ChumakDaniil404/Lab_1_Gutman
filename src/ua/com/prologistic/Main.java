@@ -24,7 +24,17 @@ public class Main {
         String key;
         String value;
         Boolean flags = true;
-
+/*
+-
+-
+-
+-
+-
+-
+-
+-
+-
+ */
         Scanner w = new Scanner(System.in);
         boolean exit = false;
         String way = ""; //путь
