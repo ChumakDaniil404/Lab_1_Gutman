@@ -90,6 +90,7 @@ public class Main {
             }
         }
     }
+    //not using
     private static void writeUsingOutputStream(String way, String str) {
         OutputStream os = null;
         try {
