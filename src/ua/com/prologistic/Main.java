@@ -27,23 +27,13 @@ public class Main {
 
         Scanner w = new Scanner(System.in);
         boolean exit = false;
-        //String start = "";//cтартовая строка
         String way = ""; //путь
-        //метод с промежуточной лабы с заполнением блокнота с перезаписью)
-        /*System.out.println("Введите путь к файлу ");
-                    way = w.next();
-                    System.out.println("Введите строку ");
-                    String str = w.next();
-                    start = start + str;
-                    writeUsingOutputStream(way, start);
-                    break;*/
         while(!exit) {
             System.out.println("Ваши действия: \n1. Вывод(блокнота) и запись в словарь\n2. Вывод(словаря) \n3. Добавление записи\n4. Поиск записи по ключу\n5. Удаленние записи по ключу\n" +
                     "6. Поменять словари местами\n7. Выход ");
             int number = w.nextInt();
             switch (number) {
                 case 1://считывает блокнот и записывает в словарь
-                    //start = "";
                     System.out.println("Введите путь к файлу ");
                     way = w.next();
                     System.out.println("Содержимое файла: ");
@@ -64,7 +54,6 @@ public class Main {
                         System.out.println("Введите значение");
                         value = w.next();
                         ProverOchka(key,value,dict);
-                        //dict.put(key, value);
                     }//добавить проверки
                     catch (Exception e) {
                         e.printStackTrace();}
@@ -81,7 +70,7 @@ public class Main {
                     System.out.print(dict.remove(key));
                     System.out.println("\n");
                     break;
-                case 6: //Перевернуть словарь  //123 - abc     6 = abc - 123     6 = abc - 123
+                case 6: //Перевернуть словарь
                     keys = dict.keys();
                     Enumeration<String> values = dict.elements();
                     Dictionary<String, String> time = new Hashtable<>();
