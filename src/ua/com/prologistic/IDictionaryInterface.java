@@ -1,15 +1,27 @@
 package ua.com.prologistic;
 
-import java.util.Dictionary;
-
 public interface IDictionaryInterface {
     public void check(String key, String value);
-    public void readFileLineByLine(String way, Boolean invert);
-    //public void readFileLineByLine(String way, Boolean invert);
-    public void Chtenie();
-    public void PerevernytSlovar();
-    public void Poisk(String key);
-    public void Ydalenie(String key);
-    public void writeUsingOutputStream(String way);
-    public String SlovarToString();
+
+    public void readFileLineByLine(String path, Boolean invert);
+
+    public void outputFromTheDictionary();
+
+    public void flipTheDictionary();
+
+    public void search(String key);
+
+    public void removal(String key);
+
+    public void writeUsingOutputStream(String path);
+
+    public String dictionaryToString();
+
+    public void clear();
+
+    public String getKeys();
+
+    public String getValues();
+
+    public void getKeyAndValues();
 }
